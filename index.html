@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome — Dealer Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="logo">Dealer Software</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-label">Built for dealers</p>
+        <h1 class="hero-title">
+          Streamline your business.<br>
+          <em>Grow smarter.</em>
+        </h1>
+        <p class="hero-desc">
+          A modern platform designed to simplify operations, track inventory, 
+          and help you focus on what matters most.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get started</a>
+          <a href="#features" class="btn btn-secondary">Learn more</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="card-bar"></div>
+          <div class="card-bar short"></div>
+          <div class="card-bar shorter"></div>
+          <div class="card-dots">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <h2 class="section-title">What we offer</h2>
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon">◆</div>
+          <h3>Inventory management</h3>
+          <p>Track stock, orders, and pricing in one place. Never lose sight of what you have.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">◇</div>
+          <h3>Reporting & insights</h3>
+          <p>Clear dashboards and reports so you can make decisions with confidence.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">○</div>
+          <h3>Simple & reliable</h3>
+          <p>Built to be fast, secure, and easy to use—no technical expertise required.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-inner">
+        <h2 class="section-title">Built with dealers in mind</h2>
+        <p class="about-text">
+          We understand the day-to-day challenges of running a dealer business. 
+          Our software is crafted to reduce paperwork, automate repetitive tasks, 
+          and give you more time to serve your customers.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-inner">
+        <h2 class="section-title">Get in touch</h2>
+        <p class="contact-desc">Ready to simplify your workflow? We’d love to hear from you.</p>
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Tell us about your needs..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Dealer Software. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
